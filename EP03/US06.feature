@@ -19,3 +19,11 @@ Examples:
 | active la opción | mandar notificaciones |
 | activa | arrendatario interesado |
 | desactiva | no notificaciones |
+
+Scenario: Usuario utiliza las notificaciones para dirigirse al arrendatario interesado
+
+    Given el usuario recibe la notificación de un arrendatario interesado
+    And quiera dirigirse a saber de este arrendatario
+    When presione en la notificación recibida
+    Then la aplicación redirige al usuario al perfil del arrendatario interesado
+    
