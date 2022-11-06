@@ -20,3 +20,14 @@ Examples:
     | Mis Inmuebles  | Inmueble 1  | Maria Sotomayor  |lugar tranquilo y muy limpio|
     | Mis Inmuebles  | Inmueble 2  |  Omar Galvez     |   no me gustó nada el lugar|
 
+Scenario: Ocultar una reseña de un usuario
+
+Given el propietario del  inmueble está en el apartado de las reseñas
+And observa una reseña que no es de su agrado
+When el usuario selecciona la reseña
+And presiona en el botón "Ocultar reseña"
+Then la reseña seleccionada será ocultada a la vista del propietario de la publicación del inmueble
+
+Examples:
+    |  Inmueble  |    Usuario  |           Reseña           |   Ocultar   |
+    | Inmueble 1 | Omar Galvez | no me gustó nada el lugar  |     Sí      |
