@@ -1,12 +1,6 @@
 Feature: Observar las reseñas de mis inmuebles en la plataforma
     Como arrendador quiero poder observar las reseñas de parte de los arrendadores para tener mayor certeza de ciertos aspectos de mis inmuebles
 
-Scenario: Usuario ingresa a DisCover
-Given el usuario ingresa a la plataforma DisCover
-And en el menú de inicio, el usuario ingresa su datos
-When el usuario presiona el botón "Iniciar Sesión"
-Then el sistema procede a mostrarle el menú principal
-
 Scenario: Usuario observa una reseña de un inmueble colgado
 Given el usuario ya se encuentra en el menú principal
 And el usuario presiona el botón de "Mis inmuebles"
